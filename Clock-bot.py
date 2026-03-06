@@ -21,7 +21,7 @@ def keep_alive():
     t.start()
 
 # === CONFIG ===
-TOKEN = 'INSERT TOKEN DISINI'
+TOKEN = os.environ.get('DISCORD_TOKEN')
 CHANNEL_ID = 1234567890  # Your Discord channel ID
 # NOTE: On Render, this path won't exist. You'll need to sync 
 # your school files to the cloud (like Google Drive) for Render to see them!
