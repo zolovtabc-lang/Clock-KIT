@@ -4,7 +4,7 @@ import os
 from flask import Flask
 from threading import Thread
 
-# === KEEP ALIVE SERVER ===
+# === Bypass timer ===
 app = Flask('')
 
 @app.route('/')
@@ -20,7 +20,7 @@ def keep_alive():
     t.start()
 
 # === CONFIG ===
-# This pulls from the 'Environment Variables' we set in Render
+# ngambil token dari Env yang udah di bikin di web render
 TOKEN = os.environ.get('DISCORD_TOKEN')
 
 intents = discord.Intents.default()
